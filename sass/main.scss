@@ -1,0 +1,2317 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Red Rose;
+
+}
+
+@import 'mixin';
+
+header {
+    .navbar {
+        height: 3.7rem;
+        background-color: white;
+
+        // styling navbar logo 
+        .navbar-brand {
+            img {
+                margin: 0.625rem 0rem 0.625rem 1.625rem;
+                position: relative;
+                left: 23px;
+                top: 6px;
+            }
+
+            #nav-title {
+                color: #000;
+                font-size: 0.75rem;
+                font-family: Racing Sans One;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                left: 42px;
+            }
+
+            #nav-tagline {
+                color: #000;
+                font-size: 0.5rem;
+                font-family: Red Rose;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                height: 0.625rem;
+                width: 11.125rem;
+                display: flex;
+                position: relative;
+                left: 7.125rem;
+                margin-bottom: 0px;
+                bottom: 1.25rem;
+            }
+
+        }
+
+        // styling nav menu 
+        .navbar-nav {
+            .nav-item .active {
+                border-bottom: 2px solid #FF4A47;
+
+            }
+
+            .nav-item #first-child {
+                margin-left: 6.563rem;
+            }
+
+            #active {
+                margin-left: 0px;
+            }
+
+            .nav-item {
+                color: #000;
+                font-size: 12px;
+                font-family: Red Rose;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding: 0rem 2rem;
+            }
+        }
+
+        #cta {
+            #cta-btn {
+                @include cta;
+
+
+                &:hover {
+                    @include cta-hover;
+                }
+            }
+        }
+    }
+}
+
+//  header section ends here 
+
+// hero section starts 
+#hero-section {
+    overflow: clip;
+    background: url('../images/hero-image.jpg') no-repeat top center/cover;
+    // background-position-y: 3rem;
+    width: 100%;
+    height: 37.5rem;
+
+    .hero-text {
+        .hero-title {
+            padding-top: 9rem;
+            color: white;
+            padding-left: 6rem;
+            padding-right: 27rem;
+
+        }
+
+        .hero-desc {
+            padding-left: 6rem;
+            color: white;
+            font-size: 25px;
+            padding-top: 1rem;
+        }
+
+        #cta {
+            padding-left: 6rem;
+
+            .cta {
+                @include cta;
+                width: 10rem;
+                height: 2.5rem;
+                font-size: 14px;
+
+                &:hover {
+                    @include cta-hover;
+                }
+            }
+        }
+    }
+
+
+
+    // .hero-title {
+
+    //     // width: 52.3rem;
+    //     // height: 8.688rem;
+    //     // flex-direction: column;
+    //     color: #FFF;
+    //     font-size: 2.5rem;
+    //     // font-family: Roboto Condensed;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: normal;
+    //     // align-items: center;
+    //     // position: relative;
+    //     // top: 9.013rem;
+    // }
+
+    // .hero-desc {
+    //     color: white;
+    //     font-size: 1.563rem;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: normal;
+    //     position: relative;
+    //     top: 9rem;
+    //     width: 42.75rem;
+    //     margin-top: 1rem
+    // }
+
+    #cta-btn {
+        @include cta;
+        position: relative;
+        top: 10rem;
+        width: 12.375rem;
+        height: 2rem;
+
+        &:hover {
+            @include cta-hover;
+        }
+    }
+}
+
+// hero section ends 
+
+// why choose us section starts 
+#choose-us {
+    margin: 6.25rem 0rem;
+    background-color: $primaryColor;
+    padding-bottom: 5rem;
+
+    .choose-us-heading {
+        padding-top: 30px;
+    }
+
+    #card-head {
+        background-color: $ctaColor;
+        width: 76px;
+        height: 78px;
+
+        img {
+            height: 39px;
+            position: relative;
+            top: 18px;
+            left: 18px;
+        }
+    }
+
+    .card-title {
+        color: white;
+        text-align: center;
+        padding: 1rem 0rem;
+        color: #FFF;
+        font-size: 18px;
+        font-family: Red Rose;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .card-desc {
+        color: white;
+        text-align: center;
+        display: flex;
+        width: 200px;
+        flex-direction: column;
+        color: #FFF;
+        text-align: center;
+        font-size: 1rem;
+        font-family: Red Rose;
+        font-style: normal;
+        line-height: normal;
+    }
+}
+
+// why choose us section ends
+
+//information about us section starts
+#info-about-us {
+    margin: 100px 0px;
+
+    .heading {
+        max-width: 17rem;
+        background-color: $ctaColor;
+        color: #FFF;
+        font-family: Red Rose;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 16.813rem;
+        height: 2rem;
+        border-radius: 0.3125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.37rem;
+    }
+
+    .info-heading-text {
+        max-width: 28.75rem;
+        font-family: Red Rose;
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .info-desc {
+
+        color: #333;
+        font-family: Red Rose;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 1rem 1rem;
+    }
+
+    .info-points {
+        margin: 0rem 3rem;
+
+        .point-items {
+            margin: 25px 0px;
+        }
+    }
+
+    .column-second {
+        .model {
+            @include flex;
+
+            img {
+                // position: relative;
+                // left: -196px;
+                width: 30rem;
+                margin-top: -7rem;
+            }
+        }
+    }
+
+    .counter-section {
+        // width: 73rem;
+        // height: 9.0625rem;
+        // flex-shrink: 0;
+        padding: 3rem;
+        border-radius: 4.53125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // background-image: url("../images/texture.svg");
+        background-color: #3531A4;
+
+        .numbers {
+            .num-item {
+                color: #FFF;
+                font-family: Red Rose;
+                font-size: 2.75rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .desc {
+            color: #FFF;
+            font-family: Red Rose;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0rem !important;
+        }
+    }
+}
+
+//information about us section ends
+
+
+
+
+//featured classes section starts
+#featured-classes {
+
+    margin: 100px 0px;
+
+    // classes-card section starts 
+    #classes-cards {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        .card {
+            width: 18rem;
+            margin: auto;
+
+            .card-image {
+                img {
+                    width: 18rem;
+                }
+            }
+
+            .class-name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+                background-color: $primaryColor;
+                color: white;
+                height: 65px;
+
+            }
+        }
+
+
+    }
+
+    .class-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0rem;
+
+        a {
+
+            .view-classes {
+                @include cta;
+                width: 18.375rem;
+                height: 2.875rem;
+                color: #FFF;
+                font-family: Red Rose;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: auto;
+
+                &:hover {
+                    @include cta-hover;
+                }
+            }
+
+        }
+
+    }
+}
+
+//featured classes section ends
+
+//schedule section starts 
+#schedule {
+    margin: 100px 0px;
+
+    .heading {
+        @include heading;
+    }
+
+    .table {
+        thead {
+            th {
+                background-color: $ctaColor;
+                color: white;
+                padding: 20px 25px;
+            }
+        }
+
+        tbody {
+            tr {
+                .th {
+                    padding: 20px 25px;
+                    background-color: $primaryColor;
+                    color: white;
+
+                }
+
+                td {
+                    padding: 20px 25px;
+                }
+            }
+        }
+    }
+}
+
+//schedule section ends 
+
+
+//(About Page Starts) ===============================================================================
+// banner section starts 
+#banner-section {
+    margin-bottom: 100px;
+
+    .banner {
+        background: url('../images/banner-2.jpg') no-repeat top center/cover;
+        width: 100%;
+        height: 37.5rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .breadcrumb {
+            background-color: $ctaColor;
+            margin-bottom: 0px;
+            position: relative;
+            top: 265px;
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 3rem;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
+
+// banner section ends
+
+// more about us section starts 
+#more-about-us {
+    margin: 100px 0px;
+
+    .heading {
+        width: 17rem;
+        background-color: $ctaColor;
+        color: #FFF;
+        font-family: Red Rose;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 13.813rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.37rem;
+    }
+
+    .title {
+        color: #000;
+        font-family: Red Rose;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .desc {
+        p {
+
+            color: #000;
+            font-family: Red Rose;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 30px;
+            margin-top: 2rem;
+        }
+    }
+
+    //  tabs 
+    .tabs {
+        #pills-tab {
+            .nav-item {
+                button {
+                    background-color: $ctaColor;
+                    color: white;
+                    margin: 0rem 1rem;
+                }
+            }
+        }
+
+        .tab-content {
+            color: #000;
+            font-family: Red Rose;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            width: 37rem;
+            margin-left: 10px;
+        }
+    }
+
+    // handling model image 
+    .model {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            border-radius: 2rem;
+            height: 32rem;
+        }
+    }
+}
+
+// more about us section ends 
+
+
+// scedule class section starts 
+#schedule-class {
+    background: url('../images/cta.jpg') no-repeat top center/cover;
+    height: 25rem;
+
+    .cta-1 {
+        .heading {
+            color: white;
+            position: relative;
+            bottom: 20px;
+            left: 65px;
+        }
+
+        button {
+            position: relative;
+            z-index: 1;
+            @include cta;
+            background-color: $primaryColor;
+            font-size: 15px;
+            width: 201px;
+            height: 36px;
+
+            &:hover {
+                @include cta-hover;
+                background-color: #1d355c;
+            }
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        left: 116px;
+        top: 175px;
+    }
+
+    .cta-2 {
+        .help {
+            position: relative;
+            left: 95px;
+            top: -81px;
+            color: #FFF;
+            font-family: Red Rose;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .num {
+            color: #FFF;
+            font-family: Red Rose;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: relative;
+            left: 118px;
+            bottom: 90px;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 115px;
+        left: 280px;
+    }
+}
+
+// scedule class section ends 
+
+
+// our-team section starts 
+#our-team {
+    margin: 100px 0px;
+
+    .heading {
+        @include heading;
+
+        p {
+            color: #FFF;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 0rem;
+            line-height: normal;
+        }
+    }
+
+    .owl-carousel {
+        .item {
+            .cards {
+                .card-top {
+                    img {
+
+                        border-radius: 1.1875rem;
+                    }
+
+                }
+
+                .body-card {
+                    width: 19rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: auto;
+
+                    .coach-name {
+                        font-weight: bold;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+//contact us section starts 
+#contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0px;
+
+    .heading {
+        @include heading;
+
+        p {
+            color: white;
+            margin-bottom: 0rem;
+        }
+    }
+
+    .contact-model {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+            height: 33rem;
+            width: 24rem;
+            border-radius: 2rem 0rem 0rem 2rem;
+        }
+    }
+
+    #contact-container {
+        position: relative;
+        right: 110px;
+
+        .form-container {
+            background-color: #F9F9F9;
+            position: relative;
+            left: -11px;
+            border-radius: 0rem 2rem 2rem 0rem;
+
+            .form-heading {
+                color: #000;
+                font-family: Red Rose;
+                font-size: 1.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .submit {
+                @include cta;
+                width: 9rem;
+                height: 2.4375rem;
+                font-size: 13px;
+
+                &:hover {
+                    @include cta-hover;
+                }
+            }
+        }
+    }
+}
+
+//contact us section ends
+// our-team section ends
+//(About Page Ends) ===============================================================================
+
+
+
+//(classes Page starts) ===============================================================================
+#class-banner {
+    .banner {
+        background: url('../images/banner-3.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 37rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .breadcrumb {
+            background-color: $ctaColor;
+            margin-bottom: 0px;
+            position: relative;
+            top: 200px;
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 3rem;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+
+
+}
+
+
+
+#classes-section {
+    margin: 100px 0px;
+
+
+    .heading {
+        @include heading;
+
+        p {
+            color: #FFF;
+            font-family: Red Rose;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0rem;
+        }
+    }
+
+    #classes-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .card {
+            width: 18rem;
+            margin: auto;
+
+            .class-name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 5px;
+                background-color: #345995;
+                color: white;
+                height: 65px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+//(classes Page Ends) ===============================================================================
+
+
+//(class view Page Starts) ===============================================================================
+#class-view-banner {
+
+    .banner {
+        background: url('../images/banner-7.jpg') center center/cover no-repeat;
+        height: 30rem;
+
+        .breadcrumb {
+            background-color: $ctaColor;
+            margin-bottom: 0px;
+            position: relative;
+            top: 265px;
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 3rem;
+            margin: auto;
+            position: relative;
+            top: 395px;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
+
+// class brief section starts 
+#class-brief {
+    margin: 100px 0px;
+
+    .class {
+        .heading {
+            @include heading;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+
+            }
+        }
+
+        .class-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 65rem;
+                height: 35rem;
+                border-radius: 2rem;
+            }
+        }
+
+        .class-desc {
+            p {
+                color: #3E3E3E;
+                font-family: Red Rose;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .second-heading {
+            color: #000;
+            font-family: Red Rose;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+
+        }
+
+        .points {
+            ul {
+                li {
+                    color: #3E3E3E;
+                    font-family: Red Rose;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.625rem;
+                }
+            }
+        }
+    }
+}
+
+// class brief section starts 
+
+//schedule a class section starts 
+#shedule-class {
+    margin: 100px 0px;
+}
+
+//schedule a class section ends 
+
+// browse more classes section starts 
+#browse-more {
+    margin: 100px 0px;
+
+    .heading {
+        background-color: $ctaColor;
+        margin: auto;
+        width: 13rem;
+        height: 3rem;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: white;
+            margin-bottom: 0rem;
+
+        }
+
+    }
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .cards-wrapper {
+                    display: flex;
+                    display: flex;
+                    margin: 0px 137px;
+
+                    .card {
+                        width: 18rem;
+
+                        .class-name {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 5px;
+                            background-color: #345995;
+                            color: white;
+                            height: 65px;
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// browse more classes section ends 
+//(class view Page Ends) ===============================================================================
+
+
+
+//(Gallery Page Starts) ===============================================================================
+#gallery-banner {
+    .banner {
+        background: url('../images/banner-4.jpg') top center/cover no-repeat;
+        height: 30rem;
+
+        .breadcrumb {
+            @include breadcrumb;
+            width: 12rem;
+
+            p {
+                margin-bottom: 0rem;
+                color: white;
+            }
+        }
+    }
+}
+
+#gallery {
+    margin: 100px 0px;
+
+    .card {
+        width: 18rem;
+        border-radius: 2rem;
+
+
+        a {
+            img {
+                width: 18rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+// handling modal is seperate from page (starts)
+.modal {
+    .modal-dialog {
+        .modal-content {
+
+            // width: 55rem;
+            .modal-body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50rem;
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// handling modal is seperate from page (ends)
+
+//(Gallery Page Ends) ===============================================================================
+
+//(Pricing Page Starts) ===============================================================================
+#pricing-banner {
+    .banner {
+        background: url('../images/banner-5.jpg') center center/cover no-repeat;
+        height: 30rem;
+
+        .breadcrumb {
+            @include breadcrumb;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
+
+#pricing-section {
+    margin: 100px 0px;
+
+    .heading {
+        @include heading;
+
+        p {
+            color: white;
+            margin-bottom: 0rem;
+        }
+    }
+
+    .card {
+        width: 17rem;
+        margin: auto;
+
+        .card-header {
+            background: $primaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                color: white;
+            }
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .list-unstyled {
+
+
+                color: #000;
+                text-align: center;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 306.4%;
+
+            }
+        }
+    }
+}
+
+//(PricingPage Ends) ===============================================================================
+
+
+//(Contact Page Starts) ===============================================================================
+#contact-banner {
+    .banner {
+        background: url('../images/banner-6.jpg') top center/cover no-repeat;
+        height: 37rem;
+
+        .breadcrumb {
+            @include breadcrumb;
+
+            p {
+                color: white;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+}
+
+//(Contact Page Ends) ===============================================================================
+
+
+
+
+
+// footer section starts 
+#footer {
+    background-color: $primaryColor !important;
+    color: white;
+
+}
+
+// footer section end
+
+
+
+// Responsive css starts  ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+// styling on 300 px to 400px
+@media screen and (min-width:375px) and (max-width:576px) {
+    header {
+        .navbar {
+            .container-fluid {
+                padding: 0px;
+            }
+
+            .navbar-brand {
+                position: relative;
+                top: -17px;
+                right: 38px;
+                bottom: 0px;
+
+                #nav-title {
+                    top: 4px;
+                    left: 29px;
+                }
+
+                #nav-tagline {
+                    display: none;
+                }
+            }
+
+            .navbar-toggler {
+                margin-bottom: 22px;
+                margin-right: 1rem;
+            }
+
+            .navbar-collapse {
+                background: white;
+                position: relative;
+                bottom: 22px;
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .nav-item {
+                    #first-child {
+                        margin-left: 0rem;
+                    }
+                }
+            }
+
+            #cta {
+                display: none;
+
+                #cta-btn {
+
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    //header section ends here
+
+    // #hero sectio starts here
+    #hero-section {
+        height: 27.5rem;
+
+        .hero-text {
+            .hero-title {
+                padding-top: 5rem;
+                padding-left: 2rem;
+                padding-right: 5rem;
+
+                font-size: 24px;
+            }
+
+            .hero-desc {
+                padding-left: 2rem;
+                font-size: 18px;
+                padding-right: 6rem;
+            }
+
+            #cta {
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    //hero section ends here
+
+    //info about us section starts here 
+    #info-about-us {
+        .column-second {
+            .model {
+                img {
+                    position: static;
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        .counter-section {
+            .counter-columns {
+                padding-bottom: 2rem;
+            }
+        }
+
+    }
+
+    //info about us section starts ends 
+
+    // featured classes section start 
+    #featured-classes {
+        #classes-cards {
+            .card {
+                margin: auto;
+            }
+        }
+
+    }
+
+    // featured classes section ends 
+
+
+    //classes cards section starts
+    #classes-cards {
+        .class-btn {
+            .view-classes {
+                margin: auto;
+            }
+        }
+
+    }
+
+    //classes cards section ends 
+
+    //schedule time table section starts
+    #schedule {
+        display: none;
+    }
+
+    //schedule time table section ends 
+    // (index page) ends here============================================================= 
+
+    //(about page) starts from here ======================================================
+    #banner-section {
+        .banner {
+            height: 23.5rem;
+            background-position-y: 3rem;
+
+            .breadcrumb {
+                top: 150px;
+            }
+        }
+    }
+
+    //banner section ends here 
+
+    //more abou us section starts here
+    #more-about-us {
+        .desc {
+            .tabs {
+                .tab-content {
+                    .tabs-para {
+                        padding-right: 16rem;
+                    }
+                }
+
+
+            }
+        }
+
+        .model {
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    //more about us section ends here
+
+    //shedule class section starts 
+    #schedule-class {
+        display: none;
+    }
+
+    //shedule class section ends 
+
+    // our team section starts 
+    #our-team {
+        .owl-carousel {
+            .item {
+                .cards {
+                    .body-card {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // our team section ends 
+
+    //  contact us section starts 
+    #contact-us {
+        #contact-container {
+
+            .contact-model {
+                display: none;
+            }
+
+            .form-container {
+                left: 112px;
+                margin: 0rem 2rem;
+                padding-bottom: 1rem;
+                border-radius: 2rem;
+            }
+        }
+
+    }
+
+    // featured classes section starts 
+    #featured-classes {
+        .view-classes {
+            margin: auto;
+        }
+    }
+
+    // featured classes section ends 
+
+    // contact us section ends
+    //(about page) ends  from here ======================================================
+
+
+
+    //(classes page) starts from here =======================================================
+    #classes-section {
+        #classes-cards {
+            .card {
+                margin: auto;
+            }
+        }
+    }
+
+    //(classes page) ends from here =======================================================
+
+    //(gallery page) starts from here =======================================================
+    #gallery {
+        .card {
+            margin: auto;
+        }
+    }
+
+    //(gallery page) ends from here =======================================================
+
+
+    //(pricing page) starts from here ===================================================
+    #pricing-section {
+        .card {
+            margin: auto;
+        }
+    }
+
+    //(pricing page) ends  from here ===================================================
+
+    // responsive css from 375px to 576px ends here 
+}
+
+// styling on 576px px to 768px
+@media screen and (min-width:576px) and (max-width:768px) {
+
+    //styling the index page
+    header {
+        .navbar {
+            .container-fluid {
+                padding: 0px;
+            }
+
+            .navbar-brand {
+                position: relative;
+                top: -17px;
+                right: 38px;
+                bottom: 0px;
+
+                #nav-title {
+                    top: 4px;
+                    left: 29px;
+                }
+
+                #nav-tagline {
+                    display: none;
+                }
+            }
+
+            .navbar-toggler {
+                margin-bottom: 22px;
+                margin-right: 1rem;
+            }
+
+            .navbar-collapse {
+                background: white;
+                position: relative;
+                bottom: 22px;
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .nav-item {
+                    #first-child {
+                        margin-left: 0rem;
+                    }
+                }
+            }
+
+            #cta {
+                display: none;
+
+                #cta-btn {
+
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    //header section ends here 
+
+    //hero section starts
+    #hero-section {
+        .hero-text {
+            padding-top: 10rem;
+            padding-left: 1rem;
+            padding-right: 9rem;
+
+            .hero-title {
+                padding: 0px;
+            }
+
+            .hero-desc {
+                padding: 0px;
+            }
+
+            #cta {
+                padding: 0px;
+            }
+        }
+    }
+
+    // hero section ends   
+
+    // info-about-us section starts 
+    #info-about-us {
+        .column-second {
+            .model {
+                img {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    // info-about-us section starts 
+
+    // schedule classes section starts
+    #schedule {
+        display: none;
+    }
+
+    // schedule classes section ends 
+
+    //(index page ) ends here ================================================================
+
+    // (about page) starts from here ============================================================
+
+
+    //more about us section starts
+    #more-about-us {
+        .desc {
+            p {
+                padding-right: 4rem;
+            }
+        }
+    }
+
+    //more about us section ends 
+
+    // schedule a class section starts 
+    #schedule-class {
+        .cta-1 {
+            .heading {
+                top: -62px;
+                left: 26px;
+            }
+
+            a {
+                button {
+                    bottom: 55px;
+                }
+            }
+        }
+
+        .cta-2 {
+            display: none;
+        }
+    }
+
+    // schedule a class section ends 
+
+    // contact section starts
+    #contact-us {
+        #contact-container {
+
+            .contact-model {
+                display: none;
+            }
+
+            .form-container {
+                left: 112px;
+                margin: 0rem 2rem;
+                padding-bottom: 1rem;
+                border-radius: 2rem;
+            }
+        }
+
+    }
+
+    // contact section ends 
+    // (about page) ends from here ============================================================
+}
+
+//styling on 768px to 992px 
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    //styling the index page
+    header {
+        .navbar {
+            .container-fluid {
+                padding: 0px;
+            }
+
+            .navbar-brand {
+                position: relative;
+                top: -17px;
+                right: 38px;
+                bottom: 0px;
+
+                #nav-title {
+                    top: 4px;
+                    left: 29px;
+                }
+
+                #nav-tagline {
+                    display: none;
+                }
+            }
+
+            .navbar-toggler {
+                margin-bottom: 22px;
+                margin-right: 1rem;
+            }
+
+            .navbar-collapse {
+                background: white;
+                position: relative;
+                bottom: 22px;
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .nav-item {
+                    font-size: 14px;
+
+                    #first-child {
+                        margin-left: 0rem;
+                    }
+                }
+            }
+
+            #cta {
+                display: none;
+
+                #cta-btn {
+
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    //header section ends here 
+
+    // hero section starts 
+    #hero-section {
+        .hero-text {
+            // padding-top: 10rem;
+            // padding-left: 2rem;
+            // padding-right: 9rem;
+
+            .hero-title {
+                padding-top: 9rem;
+                padding-left: 2rem;
+                padding-right: 16rem;
+            }
+
+            .hero-desc {
+                padding-left: 2rem;
+                padding-right: 19rem;
+            }
+
+            #cta {
+                padding-left: 2rem;
+            }
+        }
+    }
+
+    // hero section ends 
+
+    //information about us section starts from here 
+    #info-about-us {
+        .column-second {
+            .model {
+                img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    // information aboutus section starts from here 
+
+    // schedule (time-table) section starts
+    #schedule {
+        display: none;
+    }
+
+    // schedule (time-table) section ends 
+
+    //(index page) ends from here ================================================================================================
+
+
+
+    //(about page) starts from here ================================================================================================
+    //banner section starts
+    #banner-section {
+        .banner {
+
+            .breadcrumb {
+                top: 235px;
+            }
+        }
+    }
+
+    //banner section ends 
+
+    //schedule a class section starts
+    #schedule-class {
+        .cta-1 {
+            .heading {
+                top: -62px;
+                left: 26px;
+            }
+
+            a {
+                button {
+                    bottom: 55px;
+                }
+            }
+        }
+
+        .cta-2 {
+            display: none;
+        }
+    }
+
+    //schedule a class section ends 
+
+    // contact section starts
+    #contact-us {
+        #contact-container {
+
+            .contact-model {
+                display: none;
+            }
+
+            .form-container {
+                left: 112px;
+                margin: 0rem 2rem;
+                padding-bottom: 2rem;
+                border-radius: 2rem;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+
+    }
+
+    // contact section ends 
+    //(about page) ends from here ================================================================================================
+
+
+}
+
+// responsive styling from 768px to 992px ends here 
+
+
+//styling on 992px to 1200px
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    // styling the header section 
+    header {
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    padding: 0rem 1rem;
+                }
+            }
+
+            #cta {
+                display: none;
+            }
+        }
+    }
+
+    // header section ends 
+
+    // hero section starts
+    #hero-section {
+        background-position-y: 0rem;
+
+        .hero-text {
+            .hero-title {
+                padding-top: 9rem;
+                padding-left: 3rem;
+                padding-right: 18rem;
+            }
+
+            .hero-desc {
+                // padding-top: 9rem;
+                padding-left: 3rem;
+                padding-right: 26rem;
+            }
+
+            #cta {
+                padding-left: 3rem;
+            }
+        }
+    }
+
+    // hero section ends
+
+    // (index page) ends from here =======================================================================================
+
+    // (about page) starts from here ====================================================================================
+    //more about us section starts 
+    #more-about-us {
+        .desc {
+            p {
+                padding-right: 6rem;
+            }
+        }
+    }
+
+    //more about us section ends 
+
+    //contact section starts
+    #contact-us {
+        #contact-container {
+            position: static;
+        }
+    }
+
+    //contact section ends 
+    // (about page) ends  from here ====================================================================================
+
+
+    // (contact page) starts  from here ====================================================================================
+    //contact section starts
+    #contact-us {
+        padding-right: 3rem;
+
+        #contact-container {
+            position: static;
+        }
+    }
+
+    //contact section ends 
+    // (contact  page) ends  from here ====================================================================================
+}
+
+//responsive styling from 992px to 1200px ends here
+
+
+
+//styling from 1200px to 1400px
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+
+    // header section starts 
+    header {
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    padding: 0rem 1rem;
+                }
+            }
+        }
+    }
+
+    // header section ends 
+
+    //hero section starts
+    #hero-section {
+        .hero-text {
+            .hero-title {
+                padding-top: 9rem;
+                padding-left: 3rem;
+                padding-right: 27rem;
+            }
+
+            .hero-desc {
+                padding-right: 40rem;
+                padding-left: 3rem;
+            }
+
+            #cta {
+                padding-left: 3rem
+            }
+        }
+    }
+
+    //hero section ends
+
+    //featured-classes section starts
+    #featured-classes  {
+        #classes-cards  {
+            .card {
+                width: 17rem;
+            }
+        }
+    }
+
+    //featured-classes section ends 
+}
+
+
+// @media (max-width: 1200px) {
+
+//     // home page starts =========================================================================
+//     header {
+//         .navbar {
+//             .navbar-nav {
+//                 .nav-item {
+//                     padding: 0rem 1rem;
+//                 }
+//             }
+//         }
+
+//     }
+
+//     #hero-section {
+//         background-position-y: 3rem;
+
+//         .hero-title {
+//             width: 44.3rem;
+//         }
+//     }
+
+//     // header section Ends
+
+//     //why choose us section starts 
+//     #choose-us {
+//         .card-desc {
+//             font-size: 15px;
+//         }
+//     }
+
+//     //why choose us section ends 
+
+//     // info about us section starts 
+//     #info-about-us {
+//         .info-desc {
+//             width: 31rem;
+//             line-height: 25px;
+//         }
+
+//         .column-second {
+//             width: 3rem;
+
+//             img {
+//                 position: relative;
+//                 right: 206px;
+//             }
+//         }
+//     }
+
+//     // info about us section ends
+
+//     // featured classes section starts 
+//     #featured-classes {
+//         #classes-cards {
+//             .card {
+//                 width: 17rem;
+//             }
+//         }
+//     }
+
+//     // featured classes section ends 
+//     // home page ends =============================================================================
+
+// }
+
+
+// @media screen and (max-width: 992px) and (min-width:768px) {
+
+//     // home page starts 
+//     // header section starts 
+//     header {
+//         .navbar {
+//             .navbar-brand {
+//                 position: relative;
+//                 right: 40px;
+//             }
+
+//             .navbar-nav {
+//                 .nav-item {
+//                     padding: 0px 11px;
+
+//                     #first-child {
+//                         margin-left: 59px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         #cta {
+//             #cta-btn {
+//                 display: none;
+//             }
+//         }
+//     }
+
+//     // header section ends 
+//     // hero section starts 
+//     #hero-section {
+//         height: 29rem;
+//         background-position-y: 40px;
+
+//         .hero-title {
+//             width: 39.3rem;
+//             height: 8.688rem;
+//             position: relative;
+//             top: 168.208px;
+
+
+//         }
+
+//         .hero-desc {
+//             top: 113px;
+//         }
+
+//         #cta-btn {
+//             top: 114px;
+//         }
+//     }
+
+//     // hero section ends
+//     // why choose us section starts 
+//     #choose-us {
+//         .card-desc {
+//             font-size: 15px;
+//         }
+//     }
+
+//     // why choose us section ends 
+
+//     //info about us section starts 
+//     #info-about-us {
+//         .column-second {
+//             img {
+//                 left: -196px;
+//             }
+//         }
+//     }
+
+//     //info about us section ends 
+
+//     //featured classes section starts
+//     #featured-classes {
+//         #classes-cards {
+//             .card {
+//                 margin: auto;
+//             }
+//         }
+
+//     }
+
+//     //featured classes section ends 
+//     // home page ends===========================================================================
+
+
+//     // about page starts ========================================================================
+//     // banner section starts 
+//     #banner-section {
+//         .banner {
+//             height: 29rem;
+//         }
+
+//         .breadcrumb {
+//             top: 187px;
+//         }
+//     }
+
+//     // banner section ends 
+
+//     // schedule a class section starts 
+//     #schedule-class {
+//         .cta-1 {
+//             top: 143px;
+//         }
+
+//         .cta-2 {
+//             top: 83px;
+//         }
+//     }
+
+//     // schedule a class section ends 
+
+
+//     // contact us section starts 
+//     #contact-us {
+//         #contact-container {
+//             right: 25px !important;
+//         }
+//     }
+
+//     // contact us section ends 
+//     // about page ends ========================================================================
+
+
+
+//     // pricing page starts ========================================================================
+//     #pricing-section {
+//         .card {
+//             margin: auto;
+//         }
+//     }
+
+//     // pricing page ends ========================================================================
+
+// }
+
+// styling on 768px 
+// @media screen and (max-width:768px) and (min-width:576px) {
+
+//     // header section starts 
+//     header {
+//         .navbar {
+//             .container-fluid {
+//                 padding: 0px !important;
+//             }
+
+//             .navbar-brand {
+//                 bottom: 20px;
+//             }
+
+//             #cta {
+//                 display: none;
+//             }
+
+//             .navbar-toggler {
+//                 margin-bottom: 2rem;
+//                 margin-right: 1rem;
+//             }
+
+//             .navbar-collapse {
+
+//                 background-color: white;
+//                 position: relative;
+//                 bottom: 2rem;
+
+//                 .navbar-nav {
+//                     display: flex;
+//                     justify-content: center;
+//                     align-items: center;
+
+//                     #first-child {
+//                         margin-left: 0px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     // header section ends 
+//     // hero  section starts
+//     #hero-section {
+//         background: url('../images/hero-small.jpg') no-repeat top center/cover;
+//         background-position-y: 51px;
+
+//         .hero-title {
+//             font-size: 2rem;
+//             width: 27rem;
+//             text-shadow: 2px 2px #0000006e;
+//             top: 149.208px;
+//         }
+
+//         .hero-desc {
+//             font-size: 1.25rem;
+//             top: 4.438rem;
+//             width: 24rem;
+//             top: 75px;
+
+//             #cta-btn {
+//                 width: 8rem;
+//                 top: 75px;
+//             }
+//         }
+//     }
+
+//     // hero section ends 
+
+//     // info about us  section starts 
+//     #info-about-us {
+//         .column-second {
+//             .model {
+//                 img {
+//                     left: -75px;
+//                     right: 0px;
+//                 }
+//             }
+//         }
+
+//         .counter-section {
+//             .numbers {
+//                 .num-item {
+//                     font-size: 2.25rem;
+//                 }
+//             }
+//         }
+//     }
+
+//     // info about us section ends 
+
+//     // featured classes section starts 
+//     #featured-classes {
+//         #classes-cards {
+//             .card {
+//                 margin: auto;
+//             }
+//         }
+//     }
+
+//     // featured classes section ends
+
+//     //schedule time table section starts
+//     #schedule {
+//         display: none;
+//     }
+
+//     // schedule time table section ends 
+
+//     //(index page) ends here =====================================================================
+
+//     // (about page) starts from here 
+//     //banner section starts
+//     #banner-section {
+//         .banner {
+//             .breadcrumb {
+//                 top: 190px;
+//             }
+//         }
+//     }
+
+//     //banner section ends 
+
+//     // schedule a class section starts 
+//     #schedule-class {
+//         height: 20rem;
+
+//         .cta-1 {
+//             .heading {
+//                 top: -45px;
+//                 left: 24px;
+//             }
+
+//             a {
+//                 button {
+//                     top: -32px;
+//                     left: 37px;
+//                 }
+//             }
+//         }
+
+//         .cta-2 {
+//             display: none;
+//         }
+//     }
+
+//     // schedule a class section ends
+
+//     // contact us section starts 
+//     #contact-us {
+//         .contact-model {
+//             display: none;
+//         }
+
+//         .form-container {
+//             left: 27px;
+//             right: 0px;
+//             padding-bottom: 34px;
+//             padding-left: 15px;
+//             border-radius: 2rem;
+//         }
+//     }
+
+//     // contact us section ends
+
+//     // (about page) ends from here 
+
+//     //(classes page) starts from here
+//     #classes-section {
+//         #classes-cards {
+//             .card {
+//                 margin: auto;
+//             }
+//         }
+//     }
+
+//     //(classes page) ends from here
+
+// }
+
+// Responsive css ends ((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+
+//animation code starts
+
+@import "animation";

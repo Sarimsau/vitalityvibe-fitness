@@ -1,0 +1,58 @@
+@import 'variable';
+
+@mixin cta {
+    color: #FFF;
+    font-size: 12px;
+    font-family: Red Rose;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5px;
+    background: $ctaColor;
+    width: 114px;
+    height: 2rem;
+    border: none;
+    margin-right: 2rem;
+}
+
+@mixin cta-hover {
+    background-color: #d00906;
+    transition: all 0.5s ease;
+    transform: translateY(5px);
+}
+
+@mixin breadcrumb {
+    background-color: $ctaColor;
+    margin-bottom: 0px;
+    position: relative;
+    top: 265px;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    margin: auto;
+    position: relative;
+    top: 395px;
+}
+
+@mixin heading {
+    border-radius: 2rem;
+    background: #FF4A47;
+    width: 10rem;
+    height: 2.875rem;
+    margin: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
